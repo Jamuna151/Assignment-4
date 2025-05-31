@@ -1,0 +1,15 @@
+import java.util.*;
+public class WordOccurrences {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String sentence = sc.nextLine();
+        String word = sc.next();
+        String[] words = sentence.split(" ");
+        int count = 0;
+        for (int i = 0; i < words.length; i++) {
+            if (words[i].equals(word))
+                count++;
+        }
+        System.out.println(count);
+    }
+}
